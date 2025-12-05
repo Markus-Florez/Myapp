@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="@drawable/login_bg">
+
+    <EditText
+        android:id="@+id/editSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:hint="Buscar"
+        android:padding="8dp"
+        android:background="@android:color/white" />
+
+    <TextView
+        android:id="@+id/editHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Marcas"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp" />
+
+    <ListView
+        android:id="@+id/editList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#33FFFFFF"
+        android:dividerHeight="1dp" />
+
+    <Button
+        android:id="@+id/editActionButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agregar"
+        android:visibility="gone" />
+
+</LinearLayout>

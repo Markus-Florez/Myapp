@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/imafondo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="32dp"
+        android:paddingBottom="16dp"
+        android:background="#66000000"
+        android:fitsSystemWindows="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Procedimiento mecánicos"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="8dp">
+
+            <ImageView
+                android:id="@+id/imgMarca"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@android:drawable/ic_menu_gallery"
+                android:background="@drawable/bg_button_circle"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/inputMarca"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="12dp"
+                android:hint="Marca"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#BDBDBD"
+                android:background="@android:color/transparent"
+                android:padding="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="8dp">
+
+            <ImageView
+                android:id="@+id/imgModelo"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@android:drawable/ic_menu_gallery"
+                android:background="@drawable/bg_button_circle"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/inputModelo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="12dp"
+                android:hint="Modelo"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#BDBDBD"
+                android:background="@android:color/transparent"
+                android:padding="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="8dp">
+
+            <ImageView
+                android:id="@+id/imgAnio"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@android:drawable/ic_menu_gallery"
+                android:background="@drawable/bg_button_circle"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/inputAnio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="12dp"
+                android:hint="Año"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#BDBDBD"
+                android:background="@android:color/transparent"
+                android:padding="8dp"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="16dp">
+
+            <Button
+                android:id="@+id/btnGuardarDatos"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="8dp"
+                android:text="Guardar Datos" />
+
+            <Button
+                android:id="@+id/btnCrearCarpetas"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="8dp"
+                android:text="Crear carpetas" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/suggestionsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:paddingTop="12dp"
+            android:text="Selecciona elemento" />
+
+        <ListView
+            android:id="@+id/suggestionsList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="#33FFFFFF"
+            android:dividerHeight="1dp"
+            android:paddingTop="8dp" />
+
+    </LinearLayout>
+
+</FrameLayout>

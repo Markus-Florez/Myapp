@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Mecatrónica Y&amp;V</string>
+    <string name="login_title">Iniciar sesión</string>
+    <string name="login_email_label">Correo electrónico</string>
+    <string name="login_password_label">Contraseña</string>
+    <string name="login_button">Entrar</string>
+    <string name="login_show">Mostrar</string>
+    <string name="login_hide">Ocultar</string>
+    <string name="login_error_auth">Error de autenticación</string>
+    <string name="login_welcome_admin">Bienvenido administrador</string>
+    <string name="login_success">Inicio de sesión exitoso</string>
+    <string name="login_empty_fields">Por favor, completa correo y contraseña</string>
+    <string name="login_role_error">Error verificando rol</string>
+    <string name="signup_success">Registro exitoso</string>
+    <string name="signup_error">Error al registrar</string>
+    <string name="admin_title">Panel de administrador</string>
+    <string name="user_title">Pantalla de usuario</string>
+    <string name="logout_button">Cerrar sesión</string>
+    <string name="admin_content_placeholder">Contenido del administrador</string>
+    <string name="user_content_placeholder">Contenido del usuario</string>
+</resources>

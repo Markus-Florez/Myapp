@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mecanicos" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:background="#66000000"
+        android:fitsSystemWindows="true">
+
+        <EditText
+            android:id="@+id/procSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:hint="Buscar"
+            android:padding="8dp"
+            android:background="@android:color/white" />
+
+        <TextView
+            android:id="@+id/procHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Marcas"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp" />
+
+        <ListView
+            android:id="@+id/procList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="#33FFFFFF"
+            android:dividerHeight="1dp" />
+
+    </LinearLayout>
+
+</FrameLayout>

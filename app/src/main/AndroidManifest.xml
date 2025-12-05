@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Myapp">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Myapp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AdminActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Myapp" />
+        <activity
+            android:name=".CrearDiagMcosActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Myapp" />
+        <activity
+            android:name=".UserActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Myapp" />
+        <activity
+            android:name=".VerProcedimientosActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Myapp" />
+        <activity
+            android:name=".ImageViewerActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Myapp" />
+        <activity
+            android:name=".CrearDiagElecActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Myapp" />
+        <activity
+            android:name=".EditarDiagElecActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Myapp" />
+        <activity
+            android:name=".UsuariosActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Myapp" />
+        <activity
+            android:name=".VerProcedimientosElecActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Myapp" />
+        <activity
+            android:name=".CrearCarpetasActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Myapp" />
+        <activity
+            android:name=".DiagElecActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Myapp" />
+        <activity
+            android:name=".EditarDiagMcosActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Myapp" />
+    </application>
+
+</manifest>

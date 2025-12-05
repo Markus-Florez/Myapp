@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+    <!-- Cambiado tools:context si tu actividad principal es MainActivity -->
+    <!-- Cambiado android:gravity a center_horizontal para centrar el contenido, incluyendo el logo -->
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="24dp"
+        app:cardCornerRadius="60dp"
+        app:cardElevation="0dp">
+
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="Logo de la aplicación"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo" />
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/white"
+        android:hint="Correo Electrónico"
+        android:inputType="textEmailAddress"
+        android:padding="12dp" />
+    <!-- Añadido fondo blanco y padding para mejor legibilidad sobre la imagen de fondo -->
+
+    <EditText
+        android:id="@+id/PasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/white"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:padding="12dp" />
+    <!-- Añadido fondo blanco y padding -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/signUpButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:text="Registrar" />
+
+        <Button
+            android:id="@+id/logInButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:text="Acceder" />
+    </LinearLayout>
+
+
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/googleButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fondo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#66000000">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="crear carpetas"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <EditText
+            android:id="@+id/inputNombreCarpeta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="nombre carpeta"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#BDBDBD"
+            android:background="@android:color/transparent"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/btnAddFile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Añadir archivo" />
+
+        <ListView
+            android:id="@+id/filesList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="#22FFFFFF"
+            android:dividerHeight="1dp" />
+
+        <Button
+            android:id="@+id/btnGuardarFolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Guardar Datos" />
+
+    </LinearLayout>
+
+</FrameLayout>
