@@ -1,6 +1,8 @@
 # Mecatronica-y-v 
 gestión de diagramas eléctricos/mecánicos 
-Lenguaje de programacion: Kotlin
+Lenguaje de programacion: Kotlin 
+herramienta: android studio
+base de datos: firebase
 ## Instrucciones de Instalación
 Para instalar la aplicación en un dispositivo Android:
 
